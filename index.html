@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <meta name="description" content="weather">
+    <meta name="keywords" content="Weather">
+    <link rel="shortcut icon" href="./bookmark-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontaweasom/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg position-relative  start-0 end-0 py-4 px-xl-5 " id="navbar">
+        <div class="container-fluid container-lg px-lg-5 m-auto">
+            <a class="navbar-brand my-color-toggle ms-lg-5 my-tittle" href="#">
+                <div class="logo-desigen d-flex align-items-center">
+                    <div class="logo-pic me-3">
+                        <img src="./images/logo.png" width="55px" alt="">
+                    </div>
+                    <div class="logo-des">
+                        <h1 class=" text-white">Weather</h1>
+                        <p class="text-white mb-0 ">tagline goes here</p>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation ">
+                <span class="fa fa-bars my-size text-white "></span>
+            </button>
+            <div class="collapse  nav-underline  navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav  d-flex  align-items-center mb-2 gap-2 gap-lg-2 mb-lg-0 nav-background-color">
+                    <li class="nav-item">
+                        <a class="nav-link  my-border-edite " aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link my-border-edite " aria-current="true" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link my-border-edite " aria-current="true" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link my-border-edite " aria-current="true" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link my-border-edite hossam  " aria-current="true" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="background-handle">
+    </header>
+    <main class="weather-container  pt-2">
+        <div class="main-container container">
+            <div class="card-weather-search pb-4">
+                <input type="search" class="my-searchinput text-white ps-4" id="searchbtn" placeholder="Search........">
+                <button type="button" class="seach-btn" id="findsearch">Find</button>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 px-0 mt-5">
+                        <div class="weather-card for-hight">
+                            <div class="tittle first-table d-flex justify-content-between  p-2">
+                                <div class="day">Friday</div>
+                                <div class="month">6December</div>
+                            </div>
+                            <div class="weather-card-body  px-3">
+                                <div class="countery pt-4">
+                                    <p class="m-0" id="country">Cairo</p>
+                                </div>
+                                <div class="temp-degree d-flex justify-content-between align-items-center">
+                                    <div class="temp-des">
+                                        <span id="firstdegree">22.1</span><sup>o</sup><span>C</span>
+                                    </div>
+                                    <div class="temp-image">
+                                        <img id="imgicon" src="./images/116.png" width="80px" alt="">
+                                    </div>
+                                </div>
+                                <div class="status">
+                                    <p class="images-container-weather" id="firststate">Partly cloudy</p>
+                                </div>
+                                <div class="statuse-with-image d-flex gap-3 pt-2">
+                                    <div class="first">
+                                        <img src="./images/icon-umberella.png" alt="">
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="second">
+                                        <img src="./images/icon-wind.png" alt="">
+                                        <span>18km/h</span>
+                                    </div>
+                                    <div class="third">
+                                        <img src="./images/icon-compass.png" alt="">
+                                        <span>East</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 px-0 mt-lg-5">
+                        <div class="weather-card-2nd for-hight">
+                            <div class="tittle tittle-2nd p-2 d-flex justify-content-center align-items-center">
+                                <p class="mb-0 day">Saturday</p>
+                            </div>
+                            <div class="day-2nd d-flex flex-column justify-content-center align-items-center mt-3">
+                                <div class="day-2nd-image m-4">
+                                    <img id="imgicon" src="./images/122.png" width="50px" alt="">
+                                </div>
+                                <div class="degree-continer text-center mb-4">
+                                    <div class="temp-2nd temp-degree">
+                                        <span id="nextday">22.1</span><sup>o</sup><span>C</span>
+                                    </div>
+                                    <div class="temp-2nd-under temp-degree">
+                                        <span id="nextdayunder">16.1</span><sup>o</sup>
+                                    </div>
+                                </div>
+                                <div class="status mt-2">
+                                    <p class="images-container-weather" id="seconedday">Overcast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 px-0 mt-lg-5">
+                        <div class="weather-card-2nd weather-card-3nd for-hight">
+                            <div
+                                class="tittle last-table tittle-3nd p-2 d-flex justify-content-center align-items-center">
+                                <p class="mb-0 day">Sunday</p>
+                            </div>
+                            <div class="day-2nd d-flex flex-column justify-content-center align-items-center  mt-3">
+                                <div class="day-2nd-image m-4">
+                                    <img id="imgicon" src="./images/113.png" width="50px" alt="">
+                                </div>
+                                <div class="degree-continer text-center mb-4">
+                                    <div class="temp-2nd temp-degree">
+                                        <span id="thirdday">23.7</span><sup>o</sup><span>C</span>
+                                    </div>
+                                    <div class="temp-2nd-under temp-degree">
+                                        <span id="thirddayunder">15.2</span><sup>o</sup>
+                                    </div>
+                                </div>
+                                <div class="status mt-2">
+                                    <p class="images-container-weather" id="thierdstatuse">Sunny</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="pt-5">
+        <div class="container">
+            <div class="card-weather-search">
+                <input type="search" class="my-searchinput enter-email text-white ps-4"
+                    placeholder="Enter your Email Address.......">
+                <button type="button" class="seach-btn ">Submit</button>
+            </div>
+            <div class="social mt-4">
+                <ul class="list-unstyled m-0 d-flex gap-3 justify-content-center">
+                    <li class="d-flex justify-content-center align-items-center">
+                        <a href="" class="">
+                            <i class="fa-brands fa-facebook-f my-edite"></i>
+                        </a>
+                    </li>
+                    <li class="d-flex justify-content-center align-items-center">
+                        <a href="">
+
+                            <i class="fa-brands fa-twitter my-edite"></i>
+                        </a>
+                    </li>
+                    <li class="d-flex justify-content-center align-items-center">
+                        <a href="">
+                            <i class="fa-brands fa-google-plus-g my-edite"></i>
+                        </a>
+                    </li>
+                    <li class="d-flex justify-content-center align-items-center">
+                        <a href="">
+                            <i class="fa-brands fa-facebook my-edite"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-des text-center text-white pb-5 pt-4 container">
+                Copyright 2014 Company name. Designed by Themezy. All rights reserved
+            </div>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
